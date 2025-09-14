@@ -1,0 +1,431 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: rgba(198, 198, 198, 0.606);
+}
+
+header {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: url(./images/headerImg.png) no-repeat center;
+    padding: 1em;
+    color: #ffffff;
+    font-family: "Smythe", sans-serif;
+    position: relative;
+}
+
+h1 {
+    line-height: 24px;
+    font-size: 39px;
+}
+
+p {
+    line-height: 14px;
+    font-size: 23px;
+}
+
+p,
+h1 {
+    padding-left: 46px;
+    font-weight: 400;
+}
+
+.addBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    max-width: 50px;
+    padding: 0;
+    margin-left: 150px;
+}
+
+.signEclipse:hover {
+    border: 2px solid #939393;
+    color: #999999;
+}
+
+.signEclipse {
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 24px;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+.container {
+    background: white;
+    max-width: 600px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemsBodyBlock {
+    background: white;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.itemCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    max-width: 508px;
+    max-height: 140px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Smythe", sans-serif;
+    color: black;
+    padding: 0;
+    gap: 30px;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.alignElements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.emoji {
+    opacity: 90%;
+    font-size: 79px;
+    line-height: 98px;
+}
+
+.name {
+    font-size: 28px;
+    line-height: 17px;
+    font-weight: 100;
+}
+
+.ingredients {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8B8B8B;
+    width: 158px;
+}
+
+.price {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 100;
+}
+
+.preCheckout {
+    background: white;
+    max-width: 508px;
+    max-height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.preCheckoutStateItems {
+    display: flex;
+    max-width: 508px;
+    max-height: auto;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Smythe", sans-serif;
+    justify-content: left;
+}
+
+.preCheckoutItems {
+    display: flex;
+}
+
+.preCheckoutPrice {
+    margin: auto;
+    margin-right: 20px;
+    font-family: "Smythe", sans-serif;
+    font-weight: 100;
+    line-height: 24px;
+}
+
+.orderTitle {
+    font-size: 28px;
+    line-height: 17px;
+    font-weight: 100;
+    font-family: "Smythe", sans-serif;
+    justify-content: center;
+    display: flex;
+}
+
+.orderTotalPrice {
+    font-size: 28px;
+    line-height: 24px;
+    font-weight: 100;
+    font-family: "Smythe", sans-serif;
+}
+
+.completeOrderBtn {
+    display: flex;
+    margin: 0 auto;
+}
+
+.removeBtn {
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    color: #BBBBBB;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.completeOrderBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16DB99;
+    border-radius: 3px;
+    border: none;
+    width: 508px;
+    height: 60px;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.totalPriceText {
+    display: flex;
+    border-top: 2px solid #000000;
+}
+
+.totalPriceValue {
+    color: #0E0E0E;
+}
+
+/* Complete Order Message */
+
+.orderCompleteMessage {
+    background-color: #ECFDF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 504px;
+    height: 120px;
+    margin-left: 48px;
+    margin-top: 40px;
+}
+
+.message {
+    color: #065F46;
+    font-size: 32px;
+    line-height: 16.8;
+    font-family: "Smythe", sans-serif;
+    padding: 0;
+}
+
+/* modal */
+
+.modal {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 542px;
+    width: 524px;
+    border-radius: 3.89px;
+    box-shadow: 5.19px 5.19px 100px 1.3px #757575;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+.modal h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    margin-top: 60px;
+}
+
+.modal-inner {
+    width: 475.91px;
+    margin: 0 auto;
+}
+
+.payBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16DB99;
+    border-radius: 3.89px;
+    border: none;
+    width: 475.91px;
+    height: 71.3px;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 31.1px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+}
+
+input {
+    margin-top: 20px;
+    border: 1.3px solid #757575;
+    width: 475.91px;
+    height: 71.3px;
+    border-radius: 3.89px;
+
+}
+
+input[type=text],
+input[type=number] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 31.1;
+    outline: none;
+}
+
+input[type=text]:focus,
+input[type=number]:focus {
+    border: 3px solid #757575;
+}
+
+input::placeholder {
+    font-size: 20px;
+    line-height: 31.1;
+    color: #757575;
+}
+
+/* Dark Theme */
+
+#themeToggle {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark .container,
+body.dark .itemsBodyBlock,
+body.dark .itemCard,
+body.dark .preCheckout,
+body.dark .modal,
+body.dark .totalPriceValue {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    border-color: #333;
+}
+
+body.dark .totalPriceText {
+    border-top: 2px solid #ffffff;
+}
+
+body.dark .ingredients {
+    color: #aaaaaa;
+}
+
+body.dark .completeOrderBtn,
+body.dark .payBtn {
+    background-color: #16db99;
+    color: white;
+}
+
+body.dark .ratingMsg {
+    color: white;
+}
+
+/* Combo Badge */
+
+.deal-badge {
+    background: #7c3019;
+    color: #fff;
+    font-size: 13px;
+    padding: 4px 7px;
+    border-radius: 5px;
+    margin-left: 6px;
+    position: relative;
+    cursor: help;
+    font-family: "Verdana", sans-serif;
+}
+
+.deal-badge::after {
+    content: "Buy 2 Pizzas + 2 Beers → 20% Off!";
+    position: absolute;
+    bottom: 125%;
+    left: 0;
+    background: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 15px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
+
+.deal-badge:hover::after {
+    opacity: 1;
+}
+
+/* rating */
+
+.rating {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.rating span {
+  margin: 0 4px;
+  transition: transform 0.2s;
+}
+
+.rating span:hover {
+  transform: scale(1.2);
+}
+
+.ratingMsg {
+  margin-top: 8px;
+  font-size: 16px;
+  font-family: "Smythe", sans-serif;
+  color: #333;
+}
